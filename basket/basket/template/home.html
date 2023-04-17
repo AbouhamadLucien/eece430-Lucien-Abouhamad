@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      body {
+        background-color: #db9a0d57;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #ffa500;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      #signup-buttons {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+      #signup-buttons a {
+        background-color: #05448d;
+        color: white;
+        padding: 14px 20px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      #signup-buttons a:hover {
+        background-color: #18079c;
+      }
+      #signup-buttons a:last-child {
+        margin-left: 0;
+      }
+      #content {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+      }
+      #text {
+        flex: 1;
+        padding-right: 50px;
+      }
+      #image {
+        flex: 1;
+        text-align: right;
+      }
+      #image img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to B-Ballers's Website</h1>
+    </header>
+    <div id="signup-buttons">
+      <a href="{% url 'signup' %}">Sign up as a member</a>
+      <a href="{% url 'signup_coach' %}">Sign up as a Coach</a>
+    </div>
+    <div id="content">
+      <div id="text">
+        <h2>Join Our Community Today</h2>
+        <p>Sign up now and start enjoying all the benefits of our platform. Check your games, vote for your MVP, and manage your account!.</p>
+      </div>
+      <div id="image">
+        <img src="https://imgtr.ee/images/2023/04/17/yj2EL.jpg" alt="Basketball Picture" width="700" height="400">
+      </div>
+    </div>
+  </body>
+</html>
